@@ -45,12 +45,12 @@ function Card(props) {
 const pcs = (
   <img src={require("./assets/cpp.png")} style={{ width: "40%" }} alt="" />
 );
-const slpmcs = <img src={require("./assets/css3.png")} alt="" />;
-const lnhses = <img src={require("./assets/jquery.png")} alt="" />;
-const dsas = <img src={require("./assets/js.png")} alt="" />;
-const svcp = <img src={require("./assets/react.png")} alt="" />;
-const pstc = <img src={require("./assets/codeigniter.png")} alt="" />;
-const esac = <img src={require("./assets/cpp.png")} alt="" />;
+const slpmcs = <img src={require("./assets/css3.png")} style={{ width: "40%" }} alt="" />;
+const lnhses = <img src={require("./assets/jquery.png")} style={{ width: "40%" }} alt="" />;
+const dsas = <img src={require("./assets/js.png")} style={{ width: "40%" }} alt="" />;
+const svcp = <img src={require("./assets/react.png")} style={{ width: "40%" }} alt="" />;
+const pstc = <img src={require("./assets/codeigniter.png")} style={{ width: "40%" }} alt="" />;
+const esac = <img src={require("./assets/cpp.png")} style={{ width: "40%" }} alt="" />;
 
 function Experience() {
   return (
