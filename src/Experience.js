@@ -45,12 +45,12 @@ function Card(props) {
 const pcs = (
   <img src={require("./assets/cpp.png")} style={{ width: "40%" }} alt="" />
 );
-const slpmcs = <img src={require("./assets/js.png")} alt="" />;
-const lnhses = <img src={require("./assets/js.png")} alt="" />;
+const slpmcs = <img src={require("./assets/css3.png")} alt="" />;
+const lnhses = <img src={require("./assets/jquery.png")} alt="" />;
 const dsas = <img src={require("./assets/js.png")} alt="" />;
-const svcp = <img src={require("./assets/js.png")} alt="" />;
-const pstc = <img src={require("./assets/js.png")} alt="" />;
-const esac = <img src={require("./assets/js.png")} alt="" />;
+const svcp = <img src={require("./assets/react.png")} alt="" />;
+const pstc = <img src={require("./assets/codeigniter.png")} alt="" />;
+const esac = <img src={require("./assets/cpp.png")} alt="" />;
 
 function Experience() {
   return (
@@ -65,42 +65,42 @@ function Experience() {
       />
 
       <Card
-        img={pcs}
+        img={slpmcs}
         desc="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla error laboriosam repellendus vitae atque cupiditate mollitia quod dolore iusto dolores fugiat est possimus temporibus, quam aperiam enim incidunt dignissimos cum."
         url="/experience/slpmcs"
         title="SLPMCS ( Stress Level of Plants Monitoring and Control System )"
       />
 
       <Card
-        img={pcs}
+        img={lnhses}
         desc="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla error laboriosam repellendus vitae atque cupiditate mollitia quod dolore iusto dolores fugiat est possimus temporibus, quam aperiam enim incidunt dignissimos cum."
         url="/experience/lnhses"
         title="Lagonoy National High School Enrollment System"
       />
 
       <Card
-        img={pcs}
+        img={dsas}
         desc="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla error laboriosam repellendus vitae atque cupiditate mollitia quod dolore iusto dolores fugiat est possimus temporibus, quam aperiam enim incidunt dignissimos cum."
         url="/experience/dsas"
         title="DSAS ( Development of Smart Attendance System )"
       />
 
       <Card
-        img={pcs}
+        img={svcp}
         desc="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla error laboriosam repellendus vitae atque cupiditate mollitia quod dolore iusto dolores fugiat est possimus temporibus, quam aperiam enim incidunt dignissimos cum."
         url="/experience/svcp"
         title="SVCP ( Sheperdville College Voting Portal )"
       />
 
       <Card
-        img={pcs}
+        img={pstc}
         desc="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla error laboriosam repellendus vitae atque cupiditate mollitia quod dolore iusto dolores fugiat est possimus temporibus, quam aperiam enim incidunt dignissimos cum."
         url="/experience/pstc"
         title="PSTC ( Partido Skills Training Center, Inc. ) Registration System"
       />
 
       <Card
-        img={pcs}
+        img={esac}
         desc="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla error laboriosam repellendus vitae atque cupiditate mollitia quod dolore iusto dolores fugiat est possimus temporibus, quam aperiam enim incidunt dignissimos cum."
         url="/experience/esac"
         title="ESAC ( Enrollment System With Automation on Attendance Checking)"
