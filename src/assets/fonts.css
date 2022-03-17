@@ -25,3 +25,7 @@ caption {
 ul > li {
   font-family: 'Courier Prime', monospace;
 }
+
+button {
+  font-family: 'JetBrains Mono', monospace;
+}

@@ -7,8 +7,9 @@ const layout = {
 
 const content = {
   marginLeft: '62.8px',
-  padding: '0.8rem',
+  padding: '0 0.8rem',
   width: 'calc(100% - 56px)',
+  minHeight: '100vh'
 };
 
 function App() {
