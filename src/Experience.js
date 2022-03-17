@@ -11,7 +11,8 @@ const container = {
 
 function Card(props) {
   return (
-    <div style={{display: "flex"}}>
+    <div style={{display: "flex", width: "100%"}}>
+      {props.img}
       <div style={{margin: '0.8rem'}}>
         <p>{props.desc}</p>
       </div>
@@ -19,12 +20,23 @@ function Card(props) {
   )
 };
 
+/*
+* Images
+*/
+const pcs = <img src={require('./assets/js.png')} style={{width: '50%'}} alt="" />;
+const slpmcs = <img src={require('./assets/js.png')} alt="" />;
+const lnhses = <img src={require('./assets/js.png')} alt="" />;
+const dsas = <img src={require('./assets/js.png')} alt="" />;
+const svcp = <img src={require('./assets/js.png')} alt="" />;
+const pstc = <img src={require('./assets/js.png')} alt="" />;
+const esac = <img src={require('./assets/js.png')} alt="" />;
+
 function Experience() {
   return (
     <div style={container}>
       <PageTitle page_name="Experience" />
       
-      <Card img="./assets/brand.png" desc="test"/>
+      <Card img={pcs} desc="test"/>
       <ol>
         <li><Link to="/experience/pcs">CASURECO IV - PCS (Phase Check System)</Link></li>
         <li><Link to="/experience/slpmcs">SLPMCS ( Stress Level of Plants Monitoring and Control System )</Link></li>

@@ -2,16 +2,21 @@ import { Link } from "react-router-dom";
 import "boxicons";
 
 const sidebar = {
+  backgroundColor: 'white',
+  position: 'fixed',
+  top: '0',
+  left: '0',
   display: 'flex',
   flexDirection: 'column',
-  height: '100vh',
+  height: '100%',
   width: '40px',
-  padding: '0.8em'
+  padding: '0 1rem'
 };
 
 const sidebar_brand = {
   color: 'white',
-  marginBottom: 'auto'
+  marginBottom: 'auto',
+  marginTop: '1rem'
 };
 
 const sidebar_link_container = {
@@ -26,7 +31,7 @@ const sidebar_link = {
 };
 
 const sidebar_social_container = {
-  
+  marginBottom: '1rem'
 };
 
 const w100 = {

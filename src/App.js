@@ -6,8 +6,9 @@ const layout = {
 };
 
 const content = {
+  marginLeft: '62.8px',
   padding: '0.8rem',
-  width: '100%',
+  width: 'calc(100% - 56px)',
 };
 
 function App() {
