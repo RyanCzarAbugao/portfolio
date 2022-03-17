@@ -32,7 +32,7 @@ function Card(props) {
         <h3>{props.title}</h3>
         <p>{props.desc}</p>
         <Link style={view_btn} to={props.url}>
-          View
+          {props.text_btn}
         </Link>
       </div>
     </div>
@@ -59,14 +59,15 @@ function Experience() {
 
       <Card
         img={pcs}
-        desc="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla error laboriosam repellendus vitae atque cupiditate mollitia quod dolore iusto dolores fugiat est possimus temporibus, quam aperiam enim incidunt dignissimos cum."
+        desc="PSC or Phase Check System is a web app that lets user upload excel file, view, edit and delete its contents. This checks the phasing of power lines, and finally outputs an excel file that shows where the error is and automatically corrects it. Sadly, This project is undisclosed as requested by the Mr. Boragay, our supervisor. I can only show a snippet during development."
         url="/experience/pcs"
         title="CASURECO IV - PCS (Phase Check System)"
+        text_btn="Undisclosed"
       />
 
       <Card
         img={slpmcs}
-        desc="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla error laboriosam repellendus vitae atque cupiditate mollitia quod dolore iusto dolores fugiat est possimus temporibus, quam aperiam enim incidunt dignissimos cum."
+        desc="Stress Level Monitoring and Control System using NUDEMCU ESP32 measures both the root temperature and moisture content of crop plants to minimize the effects of drought and give recommended actions needed to maintain the health of crop plants."
         url="/experience/slpmcs"
         title="SLPMCS ( Stress Level of Plants Monitoring and Control System )"
       />
