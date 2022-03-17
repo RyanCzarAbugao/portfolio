@@ -24,12 +24,12 @@ function Card(props) {
 * Images
 */
 const pcs = <img src={require('./assets/js.png')} style={{width: '50%'}} alt="" />;
-const slpmcs = <img src={require('./assets/js.png')} alt="" />;
-const lnhses = <img src={require('./assets/js.png')} alt="" />;
-const dsas = <img src={require('./assets/js.png')} alt="" />;
-const svcp = <img src={require('./assets/js.png')} alt="" />;
-const pstc = <img src={require('./assets/js.png')} alt="" />;
-const esac = <img src={require('./assets/js.png')} alt="" />;
+// const slpmcs = <img src={require('./assets/js.png')} alt="" />;
+// const lnhses = <img src={require('./assets/js.png')} alt="" />;
+// const dsas = <img src={require('./assets/js.png')} alt="" />;
+// const svcp = <img src={require('./assets/js.png')} alt="" />;
+// const pstc = <img src={require('./assets/js.png')} alt="" />;
+// const esac = <img src={require('./assets/js.png')} alt="" />;
 
 function Experience() {
   return (
