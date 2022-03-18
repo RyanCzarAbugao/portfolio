@@ -70,6 +70,7 @@ function Experience() {
         desc="Stress Level Monitoring and Control System using NUDEMCU ESP32 measures both the root temperature and moisture content of crop plants to minimize the effects of drought and give recommended actions needed to maintain the health of crop plants."
         url="/experience/slpmcs"
         title="SLPMCS ( Stress Level of Plants Monitoring and Control System )"
+        text_btn="Ongoing"
       />
 
       <Card
@@ -77,6 +78,7 @@ function Experience() {
         desc="Lagonoy High School Enrollment System automates the enrollment process of the school by providing web portal for student to enroll and apply for ESC Vouchers. ."
         url="/experience/lnhses"
         title="Lagonoy National High School Enrollment System"
+        text_btn="Ongoing"
       />
 
       <Card
@@ -84,6 +86,7 @@ function Experience() {
         desc="DSAS was one of my personal project that involves arduino to process attendance of student by scanning their QR code to the custom build QR Code Scanner which uses Nudemcu ESP32."
         url="/experience/dsas"
         title="DSAS ( Development of Smart Attendance System )"
+        text_btn="View"
       />
 
       <Card
@@ -91,6 +94,7 @@ function Experience() {
         desc="An ongoing personal project to practice and learn more about Codeigniter and MVC architecture. "
         url="/experience/svcp"
         title="SVCP ( Sheperdville College Voting Portal )"
+        text_btn="Ongoing"
       /
 
       <Card
@@ -98,6 +102,7 @@ function Experience() {
         desc="PSTC Registration System is a simple registration portal for enrollees, this project aims to lessen the time it takes to register and minimize being infected with covid."
         url="/experience/pstc"
         title="PSTC ( Partido Skills Training Center, Inc. ) Registration System"
+        text_btn="Ongoing"
       />
 
       <Card
@@ -105,6 +110,7 @@ function Experience() {
         desc="ESAC was one of my personal project that involves a beacon device that activates when a student is near. This project aims to automate attendance and the enrollment system of Montessori Children House of Learning."
         url="/experience/esac"
         title="ESAC ( Enrollment System With Automation on Attendance Checking)"
+        text_btn="View"
       />
 
       <Card
@@ -112,6 +118,7 @@ function Experience() {
         desc="A 6 months project that is owned by Numiworks Auction Product Trading, a business established by Amaro Baleta Jr., This project aims to provide a portal for numismatist and give them an easy to navigate app for auctioned numismatic items of Numisworks Auction Product Trading."
         url="https://numisworksauction.com"
         title="Numisworks Auction"
+        text_btn="View"
       />
     </div>
   );
