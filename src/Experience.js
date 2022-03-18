@@ -95,14 +95,14 @@ function Experience() {
 
       <Card
         img={pstc}
-        desc="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla error laboriosam repellendus vitae atque cupiditate mollitia quod dolore iusto dolores fugiat est possimus temporibus, quam aperiam enim incidunt dignissimos cum."
+        desc="PSTC Registration System is a simple registration portal for enrollees, this project aims to lessen the time it takes to register and minimize being infected with covid."
         url="/experience/pstc"
         title="PSTC ( Partido Skills Training Center, Inc. ) Registration System"
       />
 
       <Card
         img={esac}
-        desc="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla error laboriosam repellendus vitae atque cupiditate mollitia quod dolore iusto dolores fugiat est possimus temporibus, quam aperiam enim incidunt dignissimos cum."
+        desc="ESAC was one of my personal project that involves a beacon device that activates when a student is near. This project aims to automate attendance and the enrollment system of Montessori Children House of Learning."
         url="/experience/esac"
         title="ESAC ( Enrollment System With Automation on Attendance Checking)"
       />
