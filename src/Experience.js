@@ -59,7 +59,7 @@ function Experience() {
 
       <Card
         img={pcs}
-        desc="PSC or Phase Check System is a web app that lets user upload excel file, view, edit and delete its contents. This checks the phasing of power lines, and finally outputs an excel file that shows where the error is and automatically corrects it. Sadly, This project is undisclosed as requested by the Mr. Boragay, our supervisor. I can only show a snippet during development."
+        desc="PSC or Phase Check System is a web app that lets user upload excel file, view, edit and delete its contents. This checks the phasing of power lines, and finally outputs an excel file that shows where the error is and automatically corrects it. This project is undisclosed as requested by Mr. Boragay, our supervisor. I can only show a snippet during development."
         url="/experience/pcs"
         title="CASURECO IV - PCS (Phase Check System)"
         text_btn="Undisclosed"
@@ -74,24 +74,24 @@ function Experience() {
 
       <Card
         img={lnhses}
-        desc="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla error laboriosam repellendus vitae atque cupiditate mollitia quod dolore iusto dolores fugiat est possimus temporibus, quam aperiam enim incidunt dignissimos cum."
+        desc="Lagonoy High School Enrollment System automates the enrollment process of the school by providing web portal for student to enroll and apply for ESC Vouchers. ."
         url="/experience/lnhses"
         title="Lagonoy National High School Enrollment System"
       />
 
       <Card
         img={dsas}
-        desc="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla error laboriosam repellendus vitae atque cupiditate mollitia quod dolore iusto dolores fugiat est possimus temporibus, quam aperiam enim incidunt dignissimos cum."
+        desc="DSAS was one of my personal project that involves arduino to process attendance of student by scanning their QR code to the custom build QR Code Scanner which uses Nudemcu ESP32."
         url="/experience/dsas"
         title="DSAS ( Development of Smart Attendance System )"
       />
 
       <Card
         img={svcp}
-        desc="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla error laboriosam repellendus vitae atque cupiditate mollitia quod dolore iusto dolores fugiat est possimus temporibus, quam aperiam enim incidunt dignissimos cum."
+        desc="An ongoing personal project to practice and learn more about Codeigniter and MVC architecture. "
         url="/experience/svcp"
         title="SVCP ( Sheperdville College Voting Portal )"
-      />
+      /
 
       <Card
         img={pstc}
@@ -109,7 +109,7 @@ function Experience() {
 
       <Card
         img={pcs}
-        desc="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla error laboriosam repellendus vitae atque cupiditate mollitia quod dolore iusto dolores fugiat est possimus temporibus, quam aperiam enim incidunt dignissimos cum."
+        desc="A 6 months project that is owned by Numiworks Auction Product Trading, a business established by Amaro Baleta Jr., This project aims to provide a portal for numismatist and give them an easy to navigate app for auctioned numismatic items of Numisworks Auction Product Trading."
         url="https://numisworksauction.com"
         title="Numisworks Auction"
       />
