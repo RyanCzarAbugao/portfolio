@@ -52,7 +52,7 @@ function Sidebar() {
         <Link style={sidebar_link} to="/skills">
           <i className="bx bx-wrench bx-md"></i>
         </Link>
-        <Link style={sidebar_link} to="/experience">
+        <Link style={sidebar_link} to="/projects">
           <i className="bx bx-briefcase-alt-2 bx-md"></i>
         </Link>
         <Link style={sidebar_link} to="/aboutme">

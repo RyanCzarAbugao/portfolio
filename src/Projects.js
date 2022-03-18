@@ -43,7 +43,7 @@ function Card(props) {
  * Images
  */
 const pcs = (
-  <img src={require("./assets/cpp.png")} style={{ width: "40%" }} alt="" />
+  <img src={require("./assets/p_pcs.jpg")} style={{ width: "40%",  }} alt="" />
 );
 const slpmcs = <img src={require("./assets/css3.png")} style={{ width: "40%" }} alt="" />;
 const lnhses = <img src={require("./assets/jquery.png")} style={{ width: "40%" }} alt="" />;
@@ -62,7 +62,7 @@ function Experience() {
         desc="PSC or Phase Check System is a web app that lets user upload excel file, view, edit and delete its contents. This checks the phasing of power lines, and finally outputs an excel file that shows where the error is and automatically corrects it. This project is undisclosed as requested by Mr. Boragay, our supervisor. I can only show a snippet during development."
         url="/experience/pcs"
         title="CASURECO IV - PCS (Phase Check System)"
-        text_btn="Undisclosed"
+        text_btn="Undisclosed"        
       />
 
       <Card
