@@ -95,7 +95,7 @@ function Experience() {
         url="/experience/svcp"
         title="SVCP ( Sheperdville College Voting Portal )"
         text_btn="Ongoing"
-      /
+      />
 
       <Card
         img={pstc}
