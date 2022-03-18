@@ -13,7 +13,7 @@ const card = {
   display: "flex",
   width: "100%",
   alignItems: "center",
-  marginBottom: "2rem",
+  marginBottom: "4rem",
 };
 
 const view_btn = {
@@ -60,7 +60,7 @@ function Experience() {
       <Card
         img={pcs}
         desc="PSC or Phase Check System is a web app that lets user upload excel file, view, edit and delete its contents. This checks the phasing of power lines, and finally outputs an excel file that shows where the error is and automatically corrects it. This project is undisclosed as requested by Mr. Boragay, our supervisor. I can only show a snippet during development."
-        url="/experience/pcs"
+        url="/projects"
         title="CASURECO IV - PCS (Phase Check System)"
         text_btn="Undisclosed"        
       />
@@ -68,7 +68,7 @@ function Experience() {
       <Card
         img={slpmcs}
         desc="Stress Level Monitoring and Control System using NUDEMCU ESP32 measures both the root temperature and moisture content of crop plants to minimize the effects of drought and give recommended actions needed to maintain the health of crop plants."
-        url="/experience/slpmcs"
+        url="/projects/slpmcs"
         title="SLPMCS ( Stress Level of Plants Monitoring and Control System )"
         text_btn="Ongoing"
       />
@@ -76,7 +76,7 @@ function Experience() {
       <Card
         img={lnhses}
         desc="Lagonoy High School Enrollment System automates the enrollment process of the school by providing web portal for student to enroll and apply for ESC Vouchers. ."
-        url="/experience/lnhses"
+        url="/projects/lnhses"
         title="Lagonoy National High School Enrollment System"
         text_btn="Ongoing"
       />
@@ -84,7 +84,7 @@ function Experience() {
       <Card
         img={dsas}
         desc="DSAS was one of my personal project that involves arduino to process attendance of student by scanning their QR code to the custom build QR Code Scanner which uses Nudemcu ESP32."
-        url="/experience/dsas"
+        url="/projects/dsas"
         title="DSAS ( Development of Smart Attendance System )"
         text_btn="View"
       />
@@ -92,7 +92,7 @@ function Experience() {
       <Card
         img={svcp}
         desc="An ongoing personal project to practice and learn more about Codeigniter and MVC architecture. "
-        url="/experience/svcp"
+        url="/projects/svcp"
         title="SVCP ( Sheperdville College Voting Portal )"
         text_btn="Ongoing"
       />
@@ -100,7 +100,7 @@ function Experience() {
       <Card
         img={pstc}
         desc="PSTC Registration System is a simple registration portal for enrollees, this project aims to lessen the time it takes to register and minimize being infected with covid."
-        url="/experience/pstc"
+        url="/projects/pstc"
         title="PSTC ( Partido Skills Training Center, Inc. ) Registration System"
         text_btn="Ongoing"
       />
@@ -108,7 +108,7 @@ function Experience() {
       <Card
         img={esac}
         desc="ESAC was one of my personal project that involves a beacon device that activates when a student is near. This project aims to automate attendance and the enrollment system of Montessori Children House of Learning."
-        url="/experience/esac"
+        url="/projects/esac"
         title="ESAC ( Enrollment System With Automation on Attendance Checking)"
         text_btn="View"
       />
