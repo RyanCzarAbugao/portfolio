@@ -27,7 +27,7 @@ const job_title = {
 
 const name = {
   marginBottom: '0.5rem',
-  textAlign: 'center
+  textAlign: 'center'
 };
 
 function Home() {
