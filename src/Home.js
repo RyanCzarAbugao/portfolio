@@ -22,7 +22,8 @@ const btn_outlined = {
 
 const job_title = {
   color: '#6c6c6f',
-  marginBottom: '2rem'
+  marginBottom: '2rem',
+  textAlign: 'center'
 };
 
 const name = {
