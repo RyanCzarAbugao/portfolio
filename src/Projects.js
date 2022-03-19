@@ -71,7 +71,7 @@ function Projects() {
       <div style={{ margin: "auto 0" }}>
         <Card
           img={<Thumbnail src={pcs} />}
-          desc="PSC or Phase Check System is a web app that lets user upload excel file, view, edit and delete its contents. This checks the phasing of power lines, and finally outputs an excel file that shows where the error is and automatically corrects it. This project is undisclosed as requested by Engr. Boragay, our supervisor. I can only show a snippet during the early stage of development."
+          desc="PSC or Phase Check System is a web app that lets user upload excel file, View Project, edit and delete its contents. This checks the phasing of power lines, and finally outputs an excel file that shows where the error is and automatically corrects it. This project is undisclosed as requested by Engr. Boragay, our supervisor. I can only show a snippet during the early stage of development."
           url="/projects"
           title="CASURECO IV - PCS (Phase Check System)"
           text_btn="Undisclosed"
@@ -82,7 +82,7 @@ function Projects() {
           desc="Stress Level Monitoring and Control System using NUDEMCU ESP32 is one of my personal projects. This system measures both the root temperature and moisture content of crop plants to minimize the effects of drought and give recommended actions needed to maintain the health of crop plants through the GSM module."
           url="/projects/slpmcs"
           title="SLPMCS ( Stress Level of Plants Monitoring and Control System )"
-          text_btn="View"
+          text_btn="View Project"
         />
 
         <Card
@@ -95,10 +95,10 @@ function Projects() {
 
         <Card
           img={<Thumbnail src={dsas} />}
-          desc="DSAS was one of my personal project that involves arduino to process attendance of student by scanning their QR code to the custom build QR Code Scanner which uses Nudemcu ESP32. It also has a web application to record all of the attendances of students, as well as view their schedule and abscences. The displayed image is the dashboard of the student."
+          desc="DSAS was one of my personal project that involves arduino to process attendance of student by scanning their QR code to the custom build QR Code Scanner which uses Nudemcu ESP32. It also has a web application to record all of the attendances of students, as well as View Project their schedule and abscences. The displayed image is the dashboard of the student."
           url="/projects/dsas"
           title="DSAS ( Development of Smart Attendance System )"
-          text_btn="View"
+          text_btn="View Project"
         />
 
         <Card
@@ -122,7 +122,7 @@ function Projects() {
           desc="ESAC was one of my personal project that is coded with java, it involves a beacon device that activates when a student is near which prompts them to take an attendance. This project aims to automate attendance and the enrollment system of Montessori Children House of Learning."
           url="/projects/esac"
           title="ESAC ( Enrollment System With Automation on Attendance Checking)"
-          text_btn="View"
+          text_btn="View Project"
         />
 
         <Card
@@ -130,7 +130,8 @@ function Projects() {
           desc="A 6 months project that is owned by Numiworks Auction Product Trading, a business established by Amaro Baleta Jr., This project aims to provide a portal for numismatist and give them an easy to navigate app for auctioned numismatic items of Numisworks Auction Product Trading."
           url="https://numisworksauction.com"
           title="Numisworks Auction"
-          text_btn="View"
+          text_btn="View Project"
+          isLive="true"
         />
       </div>
     </div>

@@ -1,16 +1,37 @@
-.Card  {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    align-items: center;
-    margin-bottom: 4rem;
-};
+.primary_btn {
+    padding: 0.6rem 1.5rem;
+    background-color: #74a7f4;
+    border-radius: 0.3rem;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
 
-@media only screen and (min-width: 768px) {
-    .Card {
-        display: flex;
-        width: 100%;
-        align-items: center;
-        margin-bottom: 4rem;
-    }
+.danger_btn {
+    padding: 0.6rem 1.5rem;
+    background-color: #fa4d5a;
+    border-radius: 0.3rem;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+.primary_btn:hover {
+    padding: 0.6rem 1.5rem;
+    background-color: #4388f0;
+    border-radius: 0.3rem;
+    text-decoration: none;
+    color: white;
+    text-align: enter;
+}
+
+.danger_btn:hover {
+    padding: 0.6rem 1.5rem;
+    background-color: #f81627;
+    border-radius: 0.3rem;
+    text-decoration: none;
+    color: white;
+    text-align: enter;
 }
