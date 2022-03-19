@@ -1,6 +1,5 @@
-import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
 import PageTitle from "./Components/PageTitle";
+import Card from "./Components/Card";
 
 const container = {
   display: "flex",
@@ -9,77 +8,6 @@ const container = {
   justifyContent: "center",
   height: "100%",
 };
-
-const view_btn = {
-  padding: "0.6rem 1.5rem",
-  backgroundColor: "#74a7f4",
-  borderRadius: "0.3rem",
-  textDecoration: "none",
-  color: "white",
-  textAlign: "center",
-};
-
-const card_sm = {
-  display: "flex",
-  flexDirection: "column",
-  width: "100%",
-  alignItems: "center",
-  marginBottom: "4rem",
-};
-
-const card_lg = {
-  display: "flex",
-  flexDirection: "row",
-  width: "100%",
-  alignItems: "center",
-  marginBottom: "4rem",
-};
-
-function Card(props) {
-  const [matches, setMatches] = useState(
-    window.matchMedia("(min-width: 768px)").matches
-  );
-
-  useEffect(() => {
-    window
-      .matchMedia("(min-width: 768px)")
-      .addEventListener("change", (e) => setMatches(e.matches));
-  }, []);
-
-  return (
-    <>
-      {!matches && 
-      (
-      <div style={card_sm}>
-        {props.img}
-        <div style={{ margin: "2rem" }}>
-          <h3 style={{ marginTop: "0" }}>{props.title}</h3>
-          <p style={{ marginTop: "0" }}>{props.desc}</p>
-          <Link style={view_btn} to={props.url}>
-            {props.text_btn}
-          </Link>
-        </div>
-      </div>
-      )
-      }
-
-      {matches && 
-      (
-      <div style={card_lg}>
-        {props.img}
-        <div style={{ margin: "2rem" }}>
-          <h3 style={{ marginTop: "0" }}>{props.title}</h3>
-          <p style={{ marginTop: "0" }}>{props.desc}</p>
-          <Link style={view_btn} to={props.url}>
-            {props.text_btn}
-          </Link>
-        </div>
-      </div>
-      )
-      }
-    </>
-  );
-}
 
 const thumbnail = {
   width: "40%",
