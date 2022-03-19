@@ -29,6 +29,7 @@ const sidebar_link_container = {
 const sidebar_link = {
   marginBottom: '0.5rem',
   color: '#8F7D5E',
+  textAlign: 'center',
   paddingTop: '2px'
 };
 
