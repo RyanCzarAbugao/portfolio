@@ -4,6 +4,7 @@ import pcs from "./assets/p_pcs.jpg";
 import slpmcs from "./assets/p_slpmcs.jpg";
 import dsas from "./assets/p_dsas.png";
 import esac from "./assets/p_esac.png";
+import napt from "./assets/p_napt.png";
 import alert from "./assets/alert.png";
 
 const container = {
@@ -90,7 +91,7 @@ function Projects() {
       />
 
       <Card
-        img={<Thumbnail src={alert}/>}
+        img={<Thumbnail src={napt}/>}
         desc="A 6 months project that is owned by Numiworks Auction Product Trading, a business established by Amaro Baleta Jr., This project aims to provide a portal for numismatist and give them an easy to navigate app for auctioned numismatic items of Numisworks Auction Product Trading."
         url="https://numisworksauction.com"
         title="Numisworks Auction"
