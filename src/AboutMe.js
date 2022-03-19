@@ -118,7 +118,7 @@ function AboutMe() {
         </ul>
 
         <div style={{ display: "flex", alignItems: 'flex-end' }}>
-          <h3 style={bookmark}>Seminars/Training Attended</h3>
+          <h3 style={bookmark}>Seminars/Trainings</h3>
           <div style={triangle}>&nbsp;</div>
         </div>
 
