@@ -1,4 +1,5 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
+import { useState, useEffect } from "react";
 import "boxicons";
 
 const sidebar = {
@@ -27,7 +28,17 @@ const sidebar_link_container = {
 
 const sidebar_link = {
   marginBottom: '0.5rem',
-  color: '#8F7D5E'
+  color: '#8F7D5E',
+  paddingTop: '2px'
+};
+
+const sidebar_link_active = {
+  marginBottom: '0.5rem',
+  color: '#8F7D5E',
+  backgroundColor: '#f1dbb7',
+  textAlign: 'center',
+  paddingTop: '2px',
+  borderRadius: '0.5rem'
 };
 
 const sidebar_social_container = {
@@ -39,6 +50,13 @@ const w100 = {
 };
 
 function Sidebar() {
+  const location = useLocation();
+  const [current, setCurrent] = useState(location.pathname);
+
+  useEffect(() => {
+    setCurrent(location.pathname);
+  }, [location]);
+
   return (
     <nav style={sidebar}>
       <Link style={sidebar_brand} to="/">
@@ -46,16 +64,16 @@ function Sidebar() {
       </Link>
 
       <div style={sidebar_link_container}>
-        <Link style={sidebar_link} to="/">
+        <Link style={current === '/' ? sidebar_link_active : sidebar_link} to="/">
           <i className="bx bx-home bx-md"></i>
         </Link>
-        <Link style={sidebar_link} to="/skills">
+        <Link style={current === '/skills' ? sidebar_link_active : sidebar_link} to="/skills">
           <i className="bx bx-wrench bx-md"></i>
-        </Link>
-        <Link style={sidebar_link} to="/projects">
+        </Link>       
+        <Link style={current === '/projects' ? sidebar_link_active : sidebar_link} to="/projects">
           <i className="bx bx-briefcase-alt-2 bx-md"></i>
         </Link>
-        <Link style={sidebar_link} to="/aboutme">
+        <Link style={current === '/aboutme' ? sidebar_link_active : sidebar_link} to="/aboutme">
           <i className="bx bx-info-circle bx-md"></i>
         </Link>
       </div>
