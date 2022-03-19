@@ -2,6 +2,7 @@ import PageTitle from "./Components/PageTitle";
 import Card from "./Components/Card";
 import pcs from "./assets/p_pcs.jpg";
 import slpmcs from "./assets/p_slpmcs.jpg";
+import dsas from "./assets/p_dsas.png";
 import alert from "./assets/alert.png";
 
 const container = {
@@ -56,8 +57,8 @@ function Projects() {
       />
 
       <Card
-        img={<Thumbnail src={alert}/>}
-        desc="DSAS was one of my personal project that involves arduino to process attendance of student by scanning their QR code to the custom build QR Code Scanner which uses Nudemcu ESP32."
+        img={<Thumbnail src={dsas}/>}
+        desc="DSAS was one of my personal project that involves arduino to process attendance of student by scanning their QR code to the custom build QR Code Scanner which uses Nudemcu ESP32. It also has a web application to record all of the attendances of students, as well as view their schedule and abscences. The displayed image is the dashboard of the student."
         url="/projects/dsas"
         title="DSAS ( Development of Smart Attendance System )"
         text_btn="View"
