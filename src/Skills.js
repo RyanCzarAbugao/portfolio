@@ -26,7 +26,7 @@ const card_rating = {
   margin: "0.5rem",
   minWidth: "15rem",
   borderRadius: "0.4rem",
-  boxShadow: "0 0 10px -3px gray",
+  boxShadow: "3px 3px 7px -1px gray",
 };
 
 const caption = {
@@ -45,23 +45,7 @@ const stars = {
   color: "orange",
 };
 
-const intro_container = {
-  display: "flex",
-  alignItems: "center",
-  margin: '0 5rem'
-};
-
 function Skills() {
-  const [matches, setMatches] = useState(
-    window.matchMedia("(min-width: 768px)").matches
-  );
-
-  useEffect(() => {
-    window
-      .matchMedia("(min-width: 768px)")
-      .addEventListener("change", (e) => setMatches(e.matches));
-  }, []);
-
   return (
     <div style={container}>
       <PageTitle page_name="Skills" />
