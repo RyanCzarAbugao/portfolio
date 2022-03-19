@@ -68,7 +68,7 @@ function Projects() {
       <Card
         img={<Thumbnail src={alert}/>}
         desc="Lagonoy High School Enrollment System automates the enrollment process of the school by providing web portal for student to enroll and apply for ESC Vouchers. ."
-        url="/projects/lnhses"
+        url="/projects"
         title="Lagonoy National High School Enrollment System"
         text_btn="Ongoing"
       />
@@ -84,7 +84,7 @@ function Projects() {
       <Card
         img={<Thumbnail src={alert}/>}
         desc="An ongoing personal project to practice and learn more about Codeigniter and MVC architecture. "
-        url="/projects/svcp"
+        url="/projects"
         title="SVCP ( Sheperdville College Voting Portal )"
         text_btn="Ongoing"
       />
@@ -92,7 +92,7 @@ function Projects() {
       <Card
         img={<Thumbnail src={alert}/>}
         desc="PSTC Registration System is a simple registration portal for enrollees, this project aims to lessen the time it takes to register and minimize being infected with covid."
-        url="/projects/pstc"
+        url="/projects"
         title="PSTC ( Partido Skills Training Center, Inc. ) Registration System"
         text_btn="Ongoing"
       />
