@@ -3,6 +3,7 @@ import Card from "./Components/Card";
 import pcs from "./assets/p_pcs.jpg";
 import slpmcs from "./assets/p_slpmcs.jpg";
 import dsas from "./assets/p_dsas.png";
+import esac from "./assets/p_esac.png";
 import alert from "./assets/alert.png";
 
 const container = {
@@ -81,8 +82,8 @@ function Projects() {
       />
 
       <Card
-        img={<Thumbnail src={alert}/>}
-        desc="ESAC was one of my personal project that involves a beacon device that activates when a student is near. This project aims to automate attendance and the enrollment system of Montessori Children House of Learning."
+        img={<Thumbnail src={esac}/>}
+        desc="ESAC was one of my personal project that is coded with java, it involves a beacon device that activates when a student is near which prompts them to take an attendance. This project aims to automate attendance and the enrollment system of Montessori Children House of Learning."
         url="/projects/esac"
         title="ESAC ( Enrollment System With Automation on Attendance Checking)"
         text_btn="View"
