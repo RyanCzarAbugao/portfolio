@@ -38,7 +38,7 @@ function Home() {
     <div style={container}>
       <img src={require("./assets/user.jpg")} style={user} alt="" />      
       <h2>&#9001; Hello World /&#12297;</h2>      
-      <h1 style={name}>I am Ryan Czar V. Abugao</h1>
+      <h1 style={name}>I am Ryan Czar Abugao</h1>
       <h3 style={job_title}>Full Stack Web Developer / Freelancer</h3>
       <a href="mailto:ryan.abugao@gmail.com" className="Contact" style={btn_outlined}>Contact Me</a>
     </div>
