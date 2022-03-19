@@ -13,7 +13,7 @@ const container_lg = {
   flexDirection: "column",
   justifyContent: "center",
   height: "100%",
-  margin: "0 2rem"
+  margin: "0 2rem",
 };
 
 const aboutme_pic = {
@@ -32,9 +32,10 @@ const statement = {
 };
 
 const caption = {
-  fontStyle: "italic", 
-  marginBottom: "1rem",
-  color: '#6c6c6f'
+  textAlign: 'center',
+  fontStyle: "italic",
+  margin: "0 1rem 0 1rem",
+  color: "#6c6c6f",
 };
 
 function ProfilePicture() {
@@ -46,7 +47,7 @@ function ProfilePicture() {
         alt=""
       />
     </div>
-  )
+  );
 }
 
 function Intro() {
@@ -61,9 +62,9 @@ function Intro() {
         meaningful, I get to explore coding in C++ and later applied it on my
         personal projects which involves arduino.
       </p>
-      <caption style={caption}>
+      <p style={caption}>
         "My passion and eagerness to learn new things never stops.""
-      </caption>
+      </p>
     </>
   );
 }
@@ -78,31 +79,33 @@ function AboutMe() {
       .matchMedia("(min-width: 768px)")
       .addEventListener("change", (e) => setMatches(e.matches));
   }, []);
-  
+
   return (
     <div style={!matches ? container : container_lg}>
       <PageTitle page_name="About Me" />
-      <ProfilePicture />      
-      <Intro />
 
-      <h3>Work Experience</h3>
-      <ul>
-        <li>CASURECO IV (2019)</li>
-        <li>Breta Consulting Corporation (2021)</li>
-        <li>Numisworks Auction Product Trading (2022)</li>
-      </ul>
+      <div style={{ margin: "auto 0" }}>
+        <ProfilePicture />
+        <Intro />
+        <h3>Work Experience</h3>
+        <ul>
+          <li>CASURECO IV (2019)</li>
+          <li>Breta Consulting Corporation (2021)</li>
+          <li>Numisworks Auction Product Trading (2022)</li>
+        </ul>
 
-      <h3>Seminars/Training Attended</h3>
-      <ul>
-        <li>Destination N.E.W (New and Exciting Work)</li>
-        <li>How to write a winning Meta Descriptions on SEO</li>
-        <li>Webcon on Information Security</li>
-        <li>Software Testing Basics: Process to deliver Quality</li>
-        <li>Data Visualization</li>
-        <li>Privacy and Security In the New Norma</li>
-        <li>OJT at CASURECO IV</li>
-        <li>Introduction to Online Copywriting</li>
-      </ul>
+        <h3>Seminars/Training Attended</h3>
+        <ul>
+          <li>Destination N.E.W (New and Exciting Work)</li>
+          <li>How to write a winning Meta Descriptions on SEO</li>
+          <li>Webcon on Information Security</li>
+          <li>Software Testing Basics: Process to deliver Quality</li>
+          <li>Data Visualization</li>
+          <li>Privacy and Security In the New Norma</li>
+          <li>OJT at CASURECO IV</li>
+          <li>Introduction to Online Copywriting</li>
+        </ul>
+      </div>
     </div>
   );
 }
