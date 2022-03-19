@@ -17,7 +17,9 @@ const btn_outlined = {
   borderColor: '#8F7D5E',
   backgroundImage: 'linear-gradient(30deg, #8F7D5E, #F7DDB0)',
   fontWeight: '700',
-  boxShadow: '5px 10px #bfbfc0'
+  boxShadow: '5px 10px #bfbfc0',
+  textDecoration: 'none',
+  color: '#000'
 };
 
 const job_title = {
@@ -27,7 +29,7 @@ const job_title = {
 };
 
 const name = {
-  marginBottom: '0.5rem',
+  marginBottom: '0rem',
   textAlign: 'center'
 };
 
@@ -38,7 +40,7 @@ function Home() {
       <h2>&#9001; Hello World /&#12297;</h2>      
       <h1 style={name}>I am Ryan Czar V. Abugao</h1>
       <h3 style={job_title}>Full Stack Web Developer / Freelancer</h3>
-      <button style={btn_outlined}>Contact Me</button>
+      <a href="mailto:ryan.abugao@gmail.com" className="Contact" style={btn_outlined}>Contact Me</a>
     </div>
   )
 }

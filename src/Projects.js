@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import PageTitle from "./Components/PageTitle";
 
@@ -9,46 +10,106 @@ const container = {
   height: "100%",
 };
 
-const card = {
+const view_btn = {
+  padding: "0.6rem 1.5rem",
+  backgroundColor: "#74a7f4",
+  borderRadius: "0.3rem",
+  textDecoration: "none",
+  color: "white",
+  textAlign: "center",
+};
+
+const card_sm = {
   display: "flex",
+  flexDirection: "column",
   width: "100%",
   alignItems: "center",
   marginBottom: "4rem",
 };
 
-const view_btn = {
-  padding: "0.5rem 1rem",
-  backgroundColor: "#74a7f4",
-  borderRadius: "0.4rem",
-  border: "2px #0f74d6 solid",
-  textDecoration: "none",
+const card_lg = {
+  display: "flex",
+  flexDirection: "row",
+  width: "100%",
+  alignItems: "center",
+  marginBottom: "4rem",
 };
 
 function Card(props) {
+  const [matches, setMatches] = useState(
+    window.matchMedia("(min-width: 768px)").matches
+  );
+
+  useEffect(() => {
+    window
+      .matchMedia("(min-width: 768px)")
+      .addEventListener("change", (e) => setMatches(e.matches));
+  }, []);
+
   return (
-    <div style={card}>
-      {props.img}
-      <div style={{ margin: "2rem" }}>
-        <h3>{props.title}</h3>
-        <p>{props.desc}</p>
-        <Link style={view_btn} to={props.url}>
-          {props.text_btn}
-        </Link>
+    <>
+      {!matches && 
+      (
+      <div style={card_sm}>
+        {props.img}
+        <div style={{ margin: "2rem" }}>
+          <h3 style={{ marginTop: "0" }}>{props.title}</h3>
+          <p style={{ marginTop: "0" }}>{props.desc}</p>
+          <Link style={view_btn} to={props.url}>
+            {props.text_btn}
+          </Link>
+        </div>
       </div>
-    </div>
+      )
+      }
+
+      {matches && 
+      (
+      <div style={card_lg}>
+        {props.img}
+        <div style={{ margin: "2rem" }}>
+          <h3 style={{ marginTop: "0" }}>{props.title}</h3>
+          <p style={{ marginTop: "0" }}>{props.desc}</p>
+          <Link style={view_btn} to={props.url}>
+            {props.text_btn}
+          </Link>
+        </div>
+      </div>
+      )
+      }
+    </>
   );
 }
+
+const thumbnail = {
+  width: "40%",
+  borderRadius: "0.4rem",
+};
 
 /*
  * Images
  */
-const pcs = <img src={require("./assets/p_pcs.jpg")} style={{ width: "40%",  }} alt="" />;
-const slpmcs = <img src={require("./assets/alert.png")} style={{ width: "40%" }} alt="" />;
-const lnhses = <img src={require("./assets/alert.png")} style={{ width: "40%" }} alt="" />;
-const dsas = <img src={require("./assets/alert.png")} style={{ width: "40%" }} alt="" />;
-const svcp = <img src={require("./assets/alert.png")} style={{ width: "40%" }} alt="" />;
-const pstc = <img src={require("./assets/alert.png")} style={{ width: "40%" }} alt="" />;
-const esac = <img src={require("./assets/alert.png")} style={{ width: "40%" }} alt="" />;
+const pcs = (
+  <img src={require("./assets/p_pcs.jpg")} style={thumbnail} alt="" />
+);
+const slpmcs = (
+  <img src={require("./assets/alert.png")} style={thumbnail} alt="" />
+);
+const lnhses = (
+  <img src={require("./assets/alert.png")} style={thumbnail} alt="" />
+);
+const dsas = (
+  <img src={require("./assets/alert.png")} style={thumbnail} alt="" />
+);
+const svcp = (
+  <img src={require("./assets/alert.png")} style={thumbnail} alt="" />
+);
+const pstc = (
+  <img src={require("./assets/alert.png")} style={thumbnail} alt="" />
+);
+const esac = (
+  <img src={require("./assets/alert.png")} style={thumbnail} alt="" />
+);
 
 function Projects() {
   return (
@@ -57,15 +118,15 @@ function Projects() {
 
       <Card
         img={pcs}
-        desc="PSC or Phase Check System is a web app that lets user upload excel file, view, edit and delete its contents. This checks the phasing of power lines, and finally outputs an excel file that shows where the error is and automatically corrects it. This project is undisclosed as requested by Mr. Boragay, our supervisor. I can only show a snippet during the early stage of development."
+        desc="PSC or Phase Check System is a web app that lets user upload excel file, view, edit and delete its contents. This checks the phasing of power lines, and finally outputs an excel file that shows where the error is and automatically corrects it. This project is undisclosed as requested by Engr. Boragay, our supervisor. I can only show a snippet during the early stage of development."
         url="/projects"
         title="CASURECO IV - PCS (Phase Check System)"
-        text_btn="Undisclosed"        
+        text_btn="Undisclosed"
       />
 
       <Card
         img={slpmcs}
-        desc="Stress Level Monitoring and Control System using NUDEMCU ESP32 measures both the root temperature and moisture content of crop plants to minimize the effects of drought and give recommended actions needed to maintain the health of crop plants."
+        desc="Stress Level Monitoring and Control System using NUDEMCU ESP32 measures both the root temperature and moisture content of crop plants to minimize the effects of drought and give recommended actions needed to maintain the health of crop plants through the GSM module."
         url="/projects/slpmcs"
         title="SLPMCS ( Stress Level of Plants Monitoring and Control System )"
         text_btn="View"
