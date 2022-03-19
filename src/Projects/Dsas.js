@@ -21,10 +21,10 @@ const container_lg = {
 };
 
 const preview = {
-    objectFit: 'cover'
+  objectFit: "cover",
 };
 
-function Slpmcs() {    
+function Dsas() {
   const [matches, setMatches] = useState(
     window.matchMedia("(min-width: 768px)").matches
   );
@@ -37,21 +37,21 @@ function Slpmcs() {
 
   return (
     <div style={!matches ? container : container_lg}>
-      <PageTitle page_name="Projects" />      
-      <h3>SLPMCS ( Stress Level of Plants Monitoring and Control System )</h3>
+      <PageTitle page_name="Projects" />
+      <h3>DSAS ( Development of Smart Attendance System )</h3>
 
-      <div style={{ margin: "auto 0", minHeight: '500px' }}>
-        <Carousel showArrows={true}>
+      <div style={{ margin: "auto 0" }}>
+        <Carousel autoPlay>
           <div>
-            <img src={require("../assets/slpmcs/1.jpg")} style={preview} alt="" />
+            <img src={require("../assets/dsas/1.png")} style={preview} alt="" />
             <p className="legend">1</p>
           </div>
           <div>
-            <img src={require("../assets/slpmcs/2.jpg")} style={preview} alt="" />
+            <img src={require("../assets/dsas/2.png")} style={preview} alt="" />
             <p className="legend">2</p>
           </div>
           <div>
-            <img src={require("../assets/slpmcs/3.jpg")} style={preview} alt="" />
+            <img src={require("../assets/dsas/3.png")} style={preview} alt="" />
             <p className="legend">3</p>
           </div>
         </Carousel>
@@ -60,4 +60,4 @@ function Slpmcs() {
   );
 }
 
-export default Slpmcs;
+export default Dsas;
