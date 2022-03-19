@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import PageTitle from "./Components/PageTitle";
 import Card from "./Components/Card";
 import pcs from "./assets/p_pcs.jpg";
@@ -20,12 +21,24 @@ const thumbnail = {
   borderRadius: "0.4rem",
 };
 
-/*
- * Images
- */
+const thumbnail_lg = {
+  width: "100%",
+  borderRadius: "0.4rem",
+};
+
 function Thumbnail(props) {
+  const [matches, setMatches] = useState(
+    window.matchMedia("(min-width: 768px)").matches
+  );
+
+  useEffect(() => {
+    window
+      .matchMedia("(min-width: 768px)")
+      .addEventListener("change", (e) => setMatches(e.matches));
+  }, []);
+  
   return (
-    <img src={props.src} style={thumbnail} alt="" />
+    <img src={props.src} style={matches ? thumbnail : thumbnail_lg} alt="" />
   )
 };
 
