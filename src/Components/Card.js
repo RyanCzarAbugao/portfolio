@@ -32,7 +32,7 @@ function Card(props) {
     <div style={!matches ? card_sm : card_lg}>
       {props.img}
       <div style={!matches ? {margin: "0"} : {margin: "2rem"}}>
-        <h3 style={matches ? {marginTop: "0"} : {marginTop: "2rem"}}>{props.title}</h3>
+        <h3 style={!matches ? {marginTop: "2rem", textAlign: 'center'} : {marginTop: "2rem"}}>{props.title}</h3>
         <p style={{ marginTop: "0" }}>{props.desc}</p>
         <ProjectLink url={props.url} text_btn={props.text_btn} />
       </div>

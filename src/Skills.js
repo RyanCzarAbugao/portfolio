@@ -30,7 +30,7 @@ const logo = {
 
 const card_rating = {
   display: "flex",
-  margin: "0.5rem",
+  margin: "1rem",
   minWidth: "15rem",
   borderRadius: "0.4rem",
   border: "1px gray solid",

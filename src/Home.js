@@ -17,7 +17,7 @@ const btn_outlined = {
   borderColor: '#8F7D5E',
   backgroundImage: 'linear-gradient(30deg, #8F7D5E, #F7DDB0)',
   fontWeight: '700',
-  boxShadow: '5px 10px #bfbfc0',
+  boxShadow: '7px 7px #bfbfc0',
   textDecoration: 'none',
   color: '#000'
 };
