@@ -1,12 +1,19 @@
 import { useState, useEffect } from "react";
 import PageTitle from "./Components/PageTitle";
-import illustration from "./assets/skills_illustration.jpg";
 
 const container = {
   display: "flex",
   flexDirection: "column",
   justifyContent: "center",
   height: "100%",
+};
+
+const container_lg = {
+  display: "flex",
+  flexDirection: "column",
+  justifyContent: "center",
+  height: "100%",
+  margin: "0 6rem"
 };
 
 const logo_container = {
@@ -26,7 +33,8 @@ const card_rating = {
   margin: "0.5rem",
   minWidth: "15rem",
   borderRadius: "0.4rem",
-  boxShadow: "3px 3px 7px -1px gray",
+  border: "1px gray solid",
+  boxShadow: "10px 10px #bfbfc0",
 };
 
 const caption = {
@@ -46,8 +54,18 @@ const stars = {
 };
 
 function Skills() {
+  const [matches, setMatches] = useState(
+    window.matchMedia("(min-width: 768px)").matches
+  );
+
+  useEffect(() => {
+    window
+      .matchMedia("(min-width: 768px)")
+      .addEventListener("change", (e) => setMatches(e.matches));
+  }, []);
+
   return (
-    <div style={container}>
+    <div style={!matches ? container : container_lg}>
       <PageTitle page_name="Skills" />
 
       <div style={{ margin: "auto 0" }}>

@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import PageTitle from "./Components/PageTitle";
 
 const container = {
@@ -5,6 +6,14 @@ const container = {
   flexDirection: "column",
   justifyContent: "center",
   height: "100%",
+};
+
+const container_lg = {
+  display: "flex",
+  flexDirection: "column",
+  justifyContent: "center",
+  height: "100%",
+  margin: "0 2rem"
 };
 
 const aboutme_pic = {
@@ -60,8 +69,18 @@ function Intro() {
 }
 
 function AboutMe() {
+  const [matches, setMatches] = useState(
+    window.matchMedia("(min-width: 768px)").matches
+  );
+
+  useEffect(() => {
+    window
+      .matchMedia("(min-width: 768px)")
+      .addEventListener("change", (e) => setMatches(e.matches));
+  }, []);
+  
   return (
-    <div style={container}>
+    <div style={!matches ? container : container_lg}>
       <PageTitle page_name="About Me" />
       <ProfilePicture />      
       <Intro />
