@@ -29,16 +29,15 @@ const job_title = {
 };
 
 const name = {
-  marginBottom: '0rem',
+  marginBottom: '0',
   textAlign: 'center'
 };
 
 function Home() {
   return (
     <div style={container}>
-      <img src={require("./assets/user.jpg")} style={user} alt="" />      
-      <h2>&#9001; Hello World /&#12297;</h2>      
-      <h1 style={name}>I am Ryan Czar Abugao</h1>
+      <img src={require("./assets/user.jpg")} style={user} alt="" /> 
+      <h1 style={name}>Hi! I am Ryan Czar Abugao</h1>
       <h3 style={job_title}>Full Stack Web Developer / Freelancer</h3>
       <a href="mailto:ryan.abugao@gmail.com" className="Contact" style={btn_outlined}>Contact Me</a>
     </div>
