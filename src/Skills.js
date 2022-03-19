@@ -13,7 +13,7 @@ const container_lg = {
   flexDirection: "column",
   justifyContent: "center",
   height: "100%",
-  margin: "0 6rem"
+  margin: "0 2rem"
 };
 
 const logo_container = {
@@ -25,13 +25,22 @@ const logo_container = {
 
 const logo = {
   width: "3.5rem",
+  padding: '1rem'
+};
+
+const card_rating_lg = {
+  display: "flex",
   margin: "1rem",
+  minWidth: '15rem',
+  borderRadius: "0.4rem",
+  border: "1px gray solid",
+  boxShadow: "10px 10px #bfbfc0",
 };
 
 const card_rating = {
   display: "flex",
-  margin: "1rem",
-  minWidth: "15rem",
+  margin: "1rem 0",
+  minWidth: '15rem',
   borderRadius: "0.4rem",
   border: "1px gray solid",
   boxShadow: "10px 10px #bfbfc0",
@@ -45,7 +54,7 @@ const caption = {
 };
 
 const title = {
-  margin: "0.5rem 0",
+  margin: 0
 };
 
 const stars = {
@@ -70,7 +79,7 @@ function Skills() {
 
       <div style={{ margin: "auto 0" }}>
         <div style={logo_container}>
-          <div style={card_rating}>
+          <div style={!matches ? card_rating : card_rating_lg}>
             <img
               src={require("./assets/codeigniter.png")}
               style={logo}
@@ -87,7 +96,7 @@ function Skills() {
               </div>
             </div>
           </div>
-          <div style={card_rating}>
+          <div style={!matches ? card_rating : card_rating_lg}>
             <img src={require("./assets/cpp.png")} style={logo} alt="" />
             <div style={caption}>
               <h3 style={title}>C++</h3>
@@ -100,7 +109,7 @@ function Skills() {
               </div>
             </div>
           </div>
-          <div style={card_rating}>
+          <div style={!matches ? card_rating : card_rating_lg}>
             <img src={require("./assets/css3.png")} style={logo} alt="" />
             <div style={caption}>
               <h3 style={title}>CSS3</h3>
@@ -113,7 +122,7 @@ function Skills() {
               </div>
             </div>
           </div>
-          <div style={card_rating}>
+          <div style={!matches ? card_rating : card_rating_lg}>
             <img src={require("./assets/jquery.png")} style={logo} alt="" />
             <div style={caption}>
               <h3 style={title}>JQuery</h3>
@@ -126,7 +135,7 @@ function Skills() {
               </div>
             </div>
           </div>
-          <div style={card_rating}>
+          <div style={!matches ? card_rating : card_rating_lg}>
             <img src={require("./assets/js.png")} style={logo} alt="" />
             <div style={caption}>
               <h3 style={title}>JavaScript</h3>
@@ -139,7 +148,7 @@ function Skills() {
               </div>
             </div>
           </div>
-          <div style={card_rating}>
+          <div style={!matches ? card_rating : card_rating_lg}>
             <img src={require("./assets/php.png")} style={logo} alt="" />
             <div style={caption}>
               <h3 style={title}>PHP</h3>
@@ -152,7 +161,7 @@ function Skills() {
               </div>
             </div>
           </div>
-          <div style={card_rating}>
+          <div style={!matches ? card_rating : card_rating_lg}>
             <img src={require("./assets/react.png")} style={logo} alt="" />
             <div style={caption}>
               <h3 style={title}>React</h3>
