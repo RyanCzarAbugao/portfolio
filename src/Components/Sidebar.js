@@ -30,7 +30,8 @@ const sidebar_link = {
   marginBottom: '0.5rem',
   color: '#8F7D5E',
   textAlign: 'center',
-  paddingTop: '2px'
+  paddingTop: '0.5rem',
+  fontSize: '1.6rem'
 };
 
 const sidebar_link_active = {
@@ -38,9 +39,10 @@ const sidebar_link_active = {
   color: 'white',
   backgroundColor: '#8F7D5E',
   textAlign: 'center',
-  paddingTop: '2px',
-  borderRadius: '0.5rem'
-};
+  paddingTop: '0.5rem',
+  borderRadius: '0.5rem',
+  fontSize: '1.6rem'
+}; 
 
 const sidebar_social_container = {
   marginBottom: '1rem'
@@ -66,16 +68,16 @@ function Sidebar() {
 
       <div style={sidebar_link_container}>
         <Link style={current === '/' ? sidebar_link_active : sidebar_link} to="/">
-          <i className="bx bx-home bx-md"></i>
+          <i className="bx bx-home"></i>
         </Link>
         <Link style={current === '/skills' ? sidebar_link_active : sidebar_link} to="/skills">
-          <i className="bx bx-wrench bx-md"></i>
+          <i className="bx bx-wrench"></i>
         </Link>       
         <Link style={current === '/projects' ? sidebar_link_active : sidebar_link} to="/projects">
-          <i className="bx bx-briefcase-alt-2 bx-md"></i>
+          <i className="bx bx-briefcase-alt-2"></i>
         </Link>
         <Link style={current === '/aboutme' ? sidebar_link_active : sidebar_link} to="/aboutme">
-          <i className="bx bx-info-circle bx-md"></i>
+          <i className="bx bx-info-circle"></i>
         </Link>
       </div>
 
