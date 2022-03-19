@@ -19,11 +19,13 @@ const container = {
 const thumbnail = {
   width: "40%",
   borderRadius: "0.4rem",
+  boxShadow: '10px 10px #bfbfc0'
 };
 
 const thumbnail_lg = {
   width: "100%",
   borderRadius: "0.4rem",
+  boxShadow: '10px 10px #bfbfc0'
 };
 
 function Thumbnail(props) {
