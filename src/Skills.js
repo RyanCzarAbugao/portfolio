@@ -66,20 +66,6 @@ function Skills() {
     <div style={container}>
       <PageTitle page_name="Skills" />
 
-      <div style={!matches ? {display: 'none'} : intro_container}>
-        <img
-          src={illustration}
-          alt=""
-          style={{width: "40%"}}
-        />
-        <p style={{ marginBottom: "2rem", marginLeft: "1rem" }}>
-          Hello! Welcome to my simple and minimalistic portfolio, here are the
-          list of my skills, I am confident with my skills and knowledge. I am
-          continuosly learning new technologies in IT that can help me boost up
-          my competency levels that can meet client's needs.{" "}
-        </p>
-      </div>
-
       <div style={{ margin: "auto 0" }}>
         <div style={logo_container}>
           <div style={card_rating}>
