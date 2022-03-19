@@ -35,8 +35,8 @@ const sidebar_link = {
 
 const sidebar_link_active = {
   marginBottom: '0.5rem',
-  color: '#8F7D5E',
-  backgroundColor: '#f1dbb7',
+  color: 'white',
+  backgroundColor: '#8F7D5E',
   textAlign: 'center',
   paddingTop: '2px',
   borderRadius: '0.5rem'
