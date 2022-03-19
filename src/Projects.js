@@ -41,7 +41,7 @@ function Projects() {
 
       <Card
         img={<Thumbnail src={slpmcs}/>}
-        desc="Stress Level Monitoring and Control System using NUDEMCU ESP32 measures both the root temperature and moisture content of crop plants to minimize the effects of drought and give recommended actions needed to maintain the health of crop plants through the GSM module."
+        desc="Stress Level Monitoring and Control System using NUDEMCU ESP32 is one of my personal projects. This system measures both the root temperature and moisture content of crop plants to minimize the effects of drought and give recommended actions needed to maintain the health of crop plants through the GSM module."
         url="/projects/slpmcs"
         title="SLPMCS ( Stress Level of Plants Monitoring and Control System )"
         text_btn="View"
