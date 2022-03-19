@@ -21,7 +21,7 @@ const logo = {
 const card_rating = {
   display: 'flex',
   margin: '0.5rem',
-  minWidth: '16rem',
+  minWidth: '15rem',
   borderRadius: '0.4rem',
   boxShadow: '0 0 10px -3px gray'
 };
