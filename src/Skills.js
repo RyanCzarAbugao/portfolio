@@ -14,7 +14,7 @@ const logo_container = {
 };
 
 const logo = {
-  width: "4.5rem",
+  width: "3.5rem",
   margin: "1rem",
 };
 
