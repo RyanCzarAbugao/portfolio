@@ -32,10 +32,28 @@ const statement = {
 };
 
 const caption = {
-  textAlign: 'center',
+  textAlign: "center",
   fontStyle: "italic",
   margin: "0 1rem 0 1rem",
   color: "#6c6c6f",
+};
+
+const bookmark = {
+  display: "inline-block",
+  backgroundColor: "#8f7d6d",
+  color: "white",
+  marginTop: "3rem",
+  padding: '0.5rem',
+  marginBottom: 0
+};
+
+const triangle = {
+  width: "0",
+  height: "0",
+  borderTop: "18px solid transparent",
+  borderBottom: "18px solid transparent",
+  borderLeft: "18px solid #8f7d6d",
+  
 };
 
 function ProfilePicture() {
@@ -87,21 +105,30 @@ function AboutMe() {
       <div style={{ margin: "auto 0" }}>
         <ProfilePicture />
         <Intro />
-        <h3>Work Experience</h3>
+
+        <div style={{ display: "flex", alignItems: 'flex-end' }}>
+          <h3 style={bookmark}>Work Experience</h3>
+          <div style={triangle}>&nbsp;</div>
+        </div>
+
         <ul>
           <li>CASURECO IV (2019)</li>
           <li>Breta Consulting Corporation (2021)</li>
           <li>Numisworks Auction Product Trading (2022)</li>
         </ul>
 
-        <h3>Seminars/Training Attended</h3>
+        <div style={{ display: "flex", alignItems: 'flex-end' }}>
+          <h3 style={bookmark}>Seminars/Training Attended</h3>
+          <div style={triangle}>&nbsp;</div>
+        </div>
+
         <ul>
           <li>Destination N.E.W (New and Exciting Work)</li>
           <li>How to write a winning Meta Descriptions on SEO</li>
           <li>Webcon on Information Security</li>
           <li>Software Testing Basics: Process to deliver Quality</li>
           <li>Data Visualization</li>
-          <li>Privacy and Security In the New Norma</li>
+          <li>Privacy and Security In the New Normal</li>
           <li>OJT at CASURECO IV</li>
           <li>Introduction to Online Copywriting</li>
         </ul>
