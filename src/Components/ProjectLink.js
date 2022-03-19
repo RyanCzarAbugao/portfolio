@@ -1,5 +1,16 @@
 import { Link } from "react-router-dom";
-import Radium from 'radium';
+import { useState, useEffect } from "react";
+import Radium from "radium";
+
+const container = {
+  display: 'flex',
+  justifyContent: 'center'
+};
+
+const container_lg = {
+  display: 'flex',
+  justifyContent: 'left'
+};
 
 const view_btn = {
   padding: "0.6rem 1.5rem",
@@ -8,18 +19,30 @@ const view_btn = {
   textDecoration: "none",
   color: "white",
   textAlign: "center",
-  ':hover': {
-    backgroundColor: 'red',
-    color: 'black'
-  }
+  ":hover": {
+    backgroundColor: "red",
+    color: "black",
+  },
 };
 
 function ProjectLink(props) {
+  const [matches, setMatches] = useState(
+    window.matchMedia("(min-width: 768px)").matches
+  );
+
+  useEffect(() => {
+    window
+      .matchMedia("(min-width: 768px)")
+      .addEventListener("change", (e) => setMatches(e.matches));
+  }, []);
+
   return (
-    <Link style={view_btn} to={props.url}>
-      {props.text_btn}
-    </Link>
+    <div style={!matches ? container : container_lg}>
+      <Link style={view_btn} to={props.url}>
+        {props.text_btn}
+      </Link>
+    </div>
   );
 }
 
-export default Radium( ProjectLink );
+export default Radium(ProjectLink);
