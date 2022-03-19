@@ -25,10 +25,25 @@ const view_btn = {
   },
 };
 
+const view_btn_danger = {
+  padding: "0.6rem 1.5rem",
+  backgroundColor: "#fa4d5a",
+  borderRadius: "0.3rem",
+  textDecoration: "none",
+  color: "white",
+  textAlign: "center",
+  ":hover": {
+    backgroundColor: "red",
+    color: "black",
+  },
+};
+
 function ProjectLink(props) {
   const [matches, setMatches] = useState(
     window.matchMedia("(min-width: 768px)").matches
   );
+
+  const status = props.text_btn;
 
   useEffect(() => {
     window
@@ -38,7 +53,7 @@ function ProjectLink(props) {
 
   return (
     <div style={!matches ? container : container_lg}>
-      <Link style={view_btn} to={props.url}>
+      <Link style={status === 'Undisclosed' ? view_btn_danger : view_btn} to={props.url}>
         {props.text_btn}
       </Link>
     </div>
