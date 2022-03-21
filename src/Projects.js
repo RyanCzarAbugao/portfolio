@@ -76,6 +76,7 @@ function Projects() {
           acronym="CASURECO IV - PCS"
           fullname="(Phase Check System)"
           text_btn="Undisclosed"
+          year="2019"
         />
 
         <Card
@@ -85,6 +86,7 @@ function Projects() {
           acronym="SLPMCS"
           fullname="(Stress Level of Plants Monitoring and Control System)"
           text_btn="View Project"
+          year="2020"
         />
 
         <Card
@@ -94,6 +96,7 @@ function Projects() {
           acronym="LHSES"
           fullname="(Lagonoy National High School Enrollment System)"
           text_btn="Ongoing"
+          year="2022"
         />
 
         <Card
@@ -103,6 +106,7 @@ function Projects() {
           acronym="DSAS"
           fullname="(Development of Smart Attendance System)"
           text_btn="View Project"
+          year="2020"
         />
 
         <Card
@@ -112,6 +116,7 @@ function Projects() {
           acronym="SVCP"
           fullname="(Sheperdville College Voting Portal)"
           text_btn="Ongoing"
+          year="2022"
         />
 
         <Card
@@ -121,6 +126,7 @@ function Projects() {
           acronym="PSTCIRS"
           fullname="(Partido Skills Training Center, Inc. Registration System)"
           text_btn="Ongoing"
+          year="2022"
         />
 
         <Card
@@ -130,6 +136,7 @@ function Projects() {
           acronym="ESAC"
           fullname="(Enrollment System With Automation on Attendance Checking)"
           text_btn="View Project"
+          year="2019"
         />
 
         <Card
@@ -139,6 +146,7 @@ function Projects() {
           acronym="Numisworks Auction"
           text_btn="View Project"
           isLive="true"
+          year="2022"
         />
       </div>
     </div>
