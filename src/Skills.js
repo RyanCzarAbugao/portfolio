@@ -97,6 +97,23 @@ function Skills() {
             </div>
           </div>
           <div style={!matches ? card_rating : card_rating_lg}>
+            <img
+              src={require("./assets/wordpress.png")}
+              style={logo}
+              alt=""
+            />
+            <div style={caption}>
+              <h3 style={title}>WordPress</h3>
+              <div style={stars}>
+                <i className="bx bxs-star"></i>
+                <i className="bx bxs-star"></i>
+                <i className="bx bxs-star"></i>
+                <i className="bx bxs-star"></i>
+                <i className="bx bxs-star-half"></i>
+              </div>
+            </div>
+          </div>
+          <div style={!matches ? card_rating : card_rating_lg}>
             <img src={require("./assets/cpp.png")} style={logo} alt="" />
             <div style={caption}>
               <h3 style={title}>C++</h3>
